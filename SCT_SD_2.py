@@ -29,6 +29,9 @@ if __name__ == "__main__":
     while True:
         try:
             length = int(input("Enter a Upper Limit for the Number Guessing Game (Ex: 100 , 500 , 1000):\n"))
+            if length < 1:
+                print("Please enter a positive integer.")
+                continue
             number_guessing(length)
             #wanna play again!
             play_again = input("Do you want to play again? (yes/no): ").strip().lower()
