@@ -30,6 +30,11 @@ if __name__ == "__main__":
         try:
             length = int(input("Enter a Upper Limit for the Number Guessing Game (Ex: 100 , 500 , 1000):\n"))
             number_guessing(length)
+            #wanna play again!
+            play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+            if play_again != 'yes':
+                print("Thank you for playing! Goodbye!")
+                break
         except:
             print("Invalid input. Plese enter a number\n")
     
