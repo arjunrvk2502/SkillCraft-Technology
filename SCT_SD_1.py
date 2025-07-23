@@ -20,15 +20,15 @@ def convert_temperature(temperature,from_scale,to_scale):
     if from_scale == "C" and to_scale == "F":
         return celsius_to_fahrenheit(temperature)
     elif from_scale == "C" and to_scale == "K":
-        return celsius_to_kelvin
+        return celsius_to_kelvin(temperature)
     elif from_scale == "F" and to_scale == "C":
-        return fahrenheit_to_celsius
+        return fahrenheit_to_celsius(temperature)
     elif from_scale == "F" and to_scale == "K":
-        return fahrenheit_to_kelvin
+        return fahrenheit_to_kelvin(temperature)
     elif from_scale == "K" and to_scale == "C":
-        return kelvin_to_celsius
+        return kelvin_to_celsius(temperature)
     elif from_scale == "K" and to_scale == "F":
-        return kelvin_to_fahrenheit
+        return kelvin_to_fahrenheit(temperature)
     
 if __name__ == "__main__":
     temp = int(input("Enter the temperature:"))
